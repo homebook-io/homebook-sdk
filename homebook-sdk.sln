@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{FF2FA700-BF99-4DB4-8556-DFFF72D80819}"
+	ProjectSection(SolutionItems) = preProject
+		homebook-sdk.sln = homebook-sdk.sln
+		LICENSE = LICENSE
+		README.md = README.md
+		icon_128.png = icon_128.png
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBook.Sdk.Tooling.Cli", "source\HomeBook.Sdk.Tooling.Cli\HomeBook.Sdk.Tooling.Cli.csproj", "{7A8192BF-A0CD-4FDC-958D-DE8CA7923D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBook.Sdk.Tooling.Core", "source\HomeBook.Sdk.Tooling.Core\HomeBook.Sdk.Tooling.Core.csproj", "{BE30D674-FC9A-4F3A-A47B-DA55812A8E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A8192BF-A0CD-4FDC-958D-DE8CA7923D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A8192BF-A0CD-4FDC-958D-DE8CA7923D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A8192BF-A0CD-4FDC-958D-DE8CA7923D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A8192BF-A0CD-4FDC-958D-DE8CA7923D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE30D674-FC9A-4F3A-A47B-DA55812A8E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE30D674-FC9A-4F3A-A47B-DA55812A8E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE30D674-FC9A-4F3A-A47B-DA55812A8E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE30D674-FC9A-4F3A-A47B-DA55812A8E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

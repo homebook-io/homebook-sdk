@@ -1,0 +1,80 @@
+root = true
+# editorconfig.org
+
+# top-most EditorConfig file
+
+# Default settings:
+# A newline ending every file
+# Use 4 spaces as indentation
+[*]
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+dotnet_style_coalesce_expression = true:suggestion
+dotnet_style_null_propagation = true:suggestion
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
+dotnet_style_prefer_auto_properties = true:suggestion
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_prefer_simplified_boolean_expressions = true:suggestion
+dotnet_style_prefer_conditional_expression_over_assignment = true:silent
+dotnet_style_prefer_conditional_expression_over_return = true:silent
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+dotnet_style_prefer_compound_assignment = true:suggestion
+dotnet_style_prefer_simplified_interpolation = true:suggestion
+dotnet_style_prefer_collection_expression = when_types_loosely_match:suggestion
+dotnet_style_namespace_match_folder = true:suggestion
+dotnet_style_operator_placement_when_wrapping = beginning_of_line
+tab_width = 4
+end_of_line = crlf
+dotnet_style_allow_multiple_blank_lines_experimental = true:silent
+dotnet_style_allow_statement_immediately_after_block_experimental = true:silent
+
+# C# files
+[*.cs]
+# Maximum line length
+max_line_length = 120
+
+# Force collection and object initializers to be multi-line
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_members_in_anonymous_types = true
+
+# Line wrapping preferences
+csharp_wrap_parameters_style = chop_if_long
+csharp_wrap_arguments_style = chop_if_long
+csharp_wrap_chained_method_calls = chop_if_long
+csharp_wrap_before_binary_opsign = true
+csharp_wrap_after_dot_in_method_calls = false
+
+# ReSharper properties
+resharper_csharp_insert_final_newline = false
+resharper_csharp_wrap_multiple_type_parameter_constraints_style = wrap_if_long
+resharper_keep_existing_declaration_parens_arrangement = false
+resharper_keep_existing_embedded_arrangement = false
+resharper_keep_existing_expr_member_arrangement = false
+resharper_keep_existing_primary_constructor_declaration_parens_arrangement = false
+resharper_keep_existing_switch_expression_arrangement = false
+resharper_place_simple_anonymousmethod_on_single_line = false
+resharper_place_simple_embedded_statement_on_same_line = false
+resharper_place_simple_initializer_on_single_line = false
+resharper_place_simple_property_pattern_on_single_line = false
+resharper_treat_case_statement_with_break_as_simple = false
+resharper_wrap_array_initializer_style = chop_always
+resharper_wrap_object_and_collection_initializer_style = chop_always
+resharper_wrap_property_pattern = chop_always
+
+# ReSharper line wrapping settings
+resharper_wrap_parameters_style = chop_if_long
+resharper_wrap_arguments_style = chop_if_long
+resharper_wrap_chained_method_calls = chop_if_long
+resharper_wrap_before_binary_opsign = true
+resharper_wrap_after_dot_in_method_calls = false
+resharper_wrap_long_lines = true
+resharper_max_line_length = 120
+resharper_hard_wrap_at_max_line_length = true
+
+# Microsoft .NET properties
+csharp_new_line_before_members_in_object_initializers = true
