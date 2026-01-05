@@ -27,14 +27,14 @@ jobs:
           fetch-depth: 0
 
       - name: Restore dependencies
-        run: dotnet restore source/
+        run: dotnet restore ./
 
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
         shell: pwsh
         run: |
-          dotnet build --configuration Release --no-restore -p:PackageVersion=${{ env.VERSION }} source/
+          dotnet build --configuration Release --no-restore -p:PackageVersion=${{ env.VERSION }} ./
 
       - name: Set Version Git Tag
         run: |
