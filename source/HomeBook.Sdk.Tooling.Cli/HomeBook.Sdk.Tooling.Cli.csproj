@@ -6,23 +6,26 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
 
-        <PackAsTool>true</PackAsTool>
-        <ToolCommandName>hbd</ToolCommandName>
-        <PackageOutputPath>./nupkg</PackageOutputPath>
         <AssemblyName>hbd</AssemblyName>
         <Company>$(Authors)</Company>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>homebook-io, lk-code</Authors>
         <Description>HomeBook Development CLI and SDK Tools</Description>
         <Copyright>MIT</Copyright>
+        <RepositoryUrl>https://github.com/homebook-io/homebook-sdk</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <VersionPrefix>1.0.0</VersionPrefix>
+
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>hbd</ToolCommandName>
+
+        <PackageId>homebook-sdk</PackageId>
         <PackageProjectUrl>https://github.com/homebook-io/homebook-sdk</PackageProjectUrl>
         <PackageIcon>icon_128.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <RepositoryUrl>https://github.com/homebook-io/homebook-sdk</RepositoryUrl>
-        <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-        <VersionPrefix>1.0.0</VersionPrefix>
+        <PackageOutputPath>./nupkg</PackageOutputPath>
     </PropertyGroup>
 
     <ItemGroup>
