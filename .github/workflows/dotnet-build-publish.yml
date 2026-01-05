@@ -18,11 +18,11 @@ jobs:
     steps:
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v2
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.0.x
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -42,7 +42,7 @@ jobs:
           git push origin ${{ env.VERSION }}
 
       - name: Upload Build Artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ env.VERSION }}
           path: ${{ env.NUGET_FILE }}
