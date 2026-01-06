@@ -1,10 +1,14 @@
 using ConsoleAppFramework;
+using HomeBook.Sdk.Tooling.Core.Check;
 
 namespace HomeBook.Sdk.Tooling.Cli.Commands;
 
 public class CheckCommands
 {
-    [Command("check --dependencies")]
-    public async Task CheckDependenciesAsync()
-        => await new Core.Check.Dependencies.CommandHandler().HandleAsync();
+    /// <summary>
+    /// checks that all required dependencies are available
+    /// </summary>
+    [Command("check")]
+    public async Task CheckAllAsync()
+        => await new CheckAllCommandHandler().HandleAsync();
 }

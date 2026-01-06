@@ -13,16 +13,18 @@ this will install the `hbd` command globally.
 
 ## check
 
-### dependencies
+check your local environment for required dependencies like docker, dotnet, etc.
 
 ```
-hbd check --dependencies
+hbd check
 ```
 
-## setup
+## init
 
 ### database
 
 ```
-hbd setup --database --db-type [postgresql|mysql]
+hbd init database --type|-t [postgresql|mysql]
 ```
+
+* --type|-t: specify the database type to initialize (postgresql, mysql)
